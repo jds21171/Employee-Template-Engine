@@ -32,8 +32,8 @@ async function start(){
     });
     
     // If Team Size is 0, will end program
-    if (teamSize === 0){
-        console.log("I guess there is no one on your team...");
+    if (teamSize <= 1){
+        console.log("Find some team members, then try again!");
         return;
     }
     
@@ -154,7 +154,7 @@ async function start(){
           return console.log(err);
         }
       
-        console.log("Success!");
+        console.log("Your HTML page has been successfully created!");
       
       });
 
